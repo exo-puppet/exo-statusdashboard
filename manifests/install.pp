@@ -25,7 +25,7 @@ class statusdashboard::install {
                     path => "${statusdashboard::params::statusdashboard_home}/app",
                     user => "$statusdashboard::user",
             }
-            nodejs::npm-update {
+            nodejs::npm_update {
                 "statusdashboard-npm-update" :
                     path => "${statusdashboard::params::statusdashboard_home}/app",
                     user => "$statusdashboard::user",
