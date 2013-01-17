@@ -38,5 +38,5 @@
 ################################################################################
 class statusdashboard ($user) {
 
-    include statusdashboard::params include statusdashboard::install, statusdashboard::configure, statusdashboard::service
+    include statusdashboard::params, statusdashboard::install, statusdashboard::configure, statusdashboard::service
 }
