@@ -16,13 +16,13 @@
 #
 # [+nodejs+]
 #   the +nodejs+ puppet module is needed to :
-#   
-#   - install nodejs binaries 
+#
+#   - install nodejs binaries
 #   - manage modules using npm
 #
 # [+git+]
 #   the +git+ puppet module is needed to :
-#   
+#
 #   - install git binaries
 #   - clone an existing git repository
 #   - pull updates from a remote repository
@@ -36,7 +36,7 @@
 #  }
 #
 ################################################################################
-class statusdashboard ($user) {
-
-    include statusdashboard::params, statusdashboard::install, statusdashboard::configure, statusdashboard::service
+class statusdashboard (
+  $user) {
+  include statusdashboard::params, statusdashboard::install, statusdashboard::configure, statusdashboard::service
 }
